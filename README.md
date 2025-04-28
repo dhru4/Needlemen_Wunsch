@@ -45,4 +45,7 @@ It compares two sequences, aligns them optimally, and outputs the aligned sequen
 2. Open a terminal and run:
    ```bash
    python needleman_wunsch.py
-   
+
+   or
+
+   OPen the file in any code editor and run it.
