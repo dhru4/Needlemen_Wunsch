@@ -64,13 +64,30 @@ def needleman_wunsch(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty
         align2 = seq2[j - 1] + align2
         j -= 1
 
+    # Terminal output
     print("\nAligned Sequence 1:", align1)
     print("Aligned Sequence 2:", align2)
-    print("Similarity Score:", score_matrix[m][n])
+    print("\nSimilarity Score:", score_matrix[m][n])
     print("\nScoring Matrix:")
+    # Print header row (0, -2, -4, ...)
+    header = ['{:4d}'.format(i * gap_penalty) for i in range(n + 1)]
+    print(' '.join(header))
     for row in score_matrix:
-        print(row)
+        print(' '.join(f"{num:4d}" for num in row))
 
+    # File output
+    with open("alignment_output.txt", "w") as f:
+        f.write("Aligned Sequence 1:\n" + align1 + "\n")
+        f.write("Aligned Sequence 2:\n" + align2 + "\n\n")
+        f.write("Similarity Score: " + str(score_matrix[m][n]) + "\n\n")
+        f.write("Scoring Matrix:\n")
+        f.write(' '.join(header) + "\n")
+        for row in score_matrix:
+            f.write(' '.join(f"{num:4d}" for num in row) + "\n")
+
+    print("\n[Output has been saved to 'alignment_output.txt']")
+
+# Main
 if __name__ == "__main__":
     print("Choose input method:")
     print("1. Manual sequence input")
@@ -88,7 +105,6 @@ if __name__ == "__main__":
         seqs1 = read_fasta(file1)
 
         if len(seqs1) >= 2:
-            # File already has two sequences
             needleman_wunsch(seqs1[0].upper(), seqs1[1].upper())
         elif len(seqs1) == 1:
             file2 = input("Only one sequence found. Enter a second FASTA filename: ").strip()
