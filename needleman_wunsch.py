@@ -69,9 +69,6 @@ def needleman_wunsch(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty
     print("Aligned Sequence 2:", align2)
     print("\nSimilarity Score:", score_matrix[m][n])
     print("\nScoring Matrix:")
-    # Print header row (0, -2, -4, ...)
-    header = ['{:4d}'.format(i * gap_penalty) for i in range(n + 1)]
-    print(' '.join(header))
     for row in score_matrix:
         print(' '.join(f"{num:4d}" for num in row))
 
@@ -81,13 +78,12 @@ def needleman_wunsch(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty
         f.write("Aligned Sequence 2:\n" + align2 + "\n\n")
         f.write("Similarity Score: " + str(score_matrix[m][n]) + "\n\n")
         f.write("Scoring Matrix:\n")
-        f.write(' '.join(header) + "\n")
         for row in score_matrix:
             f.write(' '.join(f"{num:4d}" for num in row) + "\n")
 
     print("\n[Output has been saved to 'alignment_output.txt']")
 
-# Main
+# Main program
 if __name__ == "__main__":
     print("Choose input method:")
     print("1. Manual sequence input")

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4aae25d8-d573-4092-a486-005472b293c0" name="Changes" comment="Second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alignment_output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/alignment_output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/needleman_wunsch.py" beforeDir="false" afterPath="$PROJECT_DIR$/needleman_wunsch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745268594329</updated>
       <workItem from="1745268597037" duration="17473000" />
-      <workItem from="1745719887906" duration="5630000" />
+      <workItem from="1745719887906" duration="11724000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -115,6 +116,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Needleman_Wunsch$needleman_wunsch.coverage" NAME="needleman_wunsch Coverage Results" MODIFIED="1745809162056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Needleman_Wunsch$needleman_wunsch.coverage" NAME="needleman_wunsch Coverage Results" MODIFIED="1745888699396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
