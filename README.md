@@ -43,9 +43,12 @@ It compares two sequences, aligns them optimally, and outputs the aligned sequen
 
 1. Clone the repository or download the files.
 2. Open a terminal and run:
-   ```bash
+   
    python needleman_wunsch.py
 
    or
 
-   OPen the file in any code editor and run it.
+   Open the file in any code editor and run it.
+3. The program will ask you to choose between inputting sequences manually or via fasta file.
+4. Choose any option you like.
+5. Some example fasta files are provided already.(make sure they are in the same directory as the code file)
